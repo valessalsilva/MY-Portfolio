@@ -73,4 +73,4 @@ Este portfólio tem como objetivo apresentar meus projetos, habilidades técnica
 
 ---
 
-✨ Desenvolvido por **Valessa Lessa**
+✨ Desenvolvido por **Valessa Lopes**

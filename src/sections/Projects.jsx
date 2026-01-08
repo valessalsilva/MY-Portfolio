@@ -3,43 +3,39 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
  {
 
-  title: "Guarda-Chuva",
+  title: "Projeto Full Stack Guarda-Chuva",
+
   description:
     "Solução computacional para cálculo e geolocalização de microbacias de captação de águas pluviais em áreas de encosta, auxiliando na análise do escoamento e prevenção de riscos ambientais.",
-  image: "/telas/guarda.png",
+  image: "/projects/project1.jpeg",
+
   tags: ["React", "Node.js", "Geolocalização", "Cálculo"],
   link: "#",
   github: "#",
 },
 {
-    title: "AI Business Landing Page",
+    title: "Beauty App",
     description:
-      "Landing page moderna para plataforma de inteligência artificial, com design responsivo, animações suaves e foco em conversão.",
+    "Aplicativo para localizar salões de beleza, agendar horários e gerenciar favoritos.",
+
     image: "/projects/project2.png",
     tags: ["React", "UI Design", "Tailwind"],
     link: "#",
     github: "#",
   },
+ 
   {
-    title: "Portfolio Pessoal",
+    title: "QR Code",
     description:
-      "Portfólio profissional desenvolvido para apresentar projetos, habilidades e experiências, com layout elegante e animações.",
-    image: "/projects/project3.jpeg",
-    tags: ["React", "Vite", "Tailwind"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "Dashboard Web",
-    description:
-      "Dashboard interativo para visualização de dados, com cards informativos, gráficos e organização clara das informações.",
+      "Projeto de QR Code para acesso rápido a links e informações digitais."
+,
     image: "/projects/project4.png",
     tags: ["React", "Components", "UX/UI"],
     link: "#",
     github: "#",
   },
   {
-    title: "Projeto Full Stack",
+     title: "Portfolio Pessoal",
     description:
       "Aplicação em desenvolvimento com integração front-end e back-end, focada em boas práticas, escalabilidade e aprendizado contínuo.",
     image: "/projects/project5.png",
@@ -144,10 +140,12 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
+          <a  href="https://github.com/valessalsilva">
           <AnimatedBorderButton>
             View All Projects
             <ArrowUpRight className="w-5 h-5" />
           </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>

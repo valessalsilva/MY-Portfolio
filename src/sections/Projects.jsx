@@ -1,39 +1,49 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
-  {
-    title: "Fintech Dashboard",
+ {
+
+  title: "Guarda-Chuva",
+  description:
+    "Solução computacional para cálculo e geolocalização de microbacias de captação de águas pluviais em áreas de encosta, auxiliando na análise do escoamento e prevenção de riscos ambientais.",
+  image: "/telas/guarda.png",
+  tags: ["React", "Node.js", "Geolocalização", "Cálculo"],
+  link: "#",
+  github: "#",
+},
+{
+    title: "AI Business Landing Page",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "E-Commerce Platform",
-    description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "Landing page moderna para plataforma de inteligência artificial, com design responsivo, animações suaves e foco em conversão.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    tags: ["React", "UI Design", "Tailwind"],
     link: "#",
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Portfolio Pessoal",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+      "Portfólio profissional desenvolvido para apresentar projetos, habilidades e experiências, com layout elegante e animações.",
+    image: "/projects/project3.jpeg",
+    tags: ["React", "Vite", "Tailwind"],
     link: "#",
     github: "#",
   },
   {
-    title: "Project Management Tool",
+    title: "Dashboard Web",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+      "Dashboard interativo para visualização de dados, com cards informativos, gráficos e organização clara das informações.",
     image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    tags: ["React", "Components", "UX/UI"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Projeto Full Stack",
+    description:
+      "Aplicação em desenvolvimento com integração front-end e back-end, focada em boas práticas, escalabilidade e aprendizado contínuo.",
+    image: "/projects/project5.png",
+    tags: ["React", "Node.js", "Full Stack"],
     link: "#",
     github: "#",
   },

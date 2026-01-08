@@ -49,30 +49,40 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                Sou <strong>Valessa Lopes</strong>, desenvolvedora Full Stack em
+                formação, apaixonada por tecnologia e pela criação de soluções
+                digitais que geram impacto real. Minha jornada na programação
+                começou com a curiosidade de entender como as coisas funcionam,
+                e hoje evolui constantemente por meio de estudos, projetos
+                práticos e aprendizado contínuo.
               </p>
+
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                Tenho foco no desenvolvimento de aplicações modernas utilizando
+                <strong> React, Next.js e TypeScript</strong>, além de atuar na
+                construção de soluções completas que envolvem front-end,
+                back-end com
+                <strong> Node.js</strong>, integração com <strong>APIs</strong>{" "}
+                e gerenciamento de <strong>bancos de dados</strong>. Busco
+                sempre unir boas práticas de código, organização e experiência
+                do usuário.
               </p>
+
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                Estou em constante evolução, explorando novas tecnologias,
+                aprimorando meus conhecimentos e colocando em prática tudo o que
+                aprendo por meio de projetos pessoais e profissionais, sempre
+                com o objetivo de crescer como desenvolvedora e entregar
+                soluções eficientes e bem estruturadas.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "Meu objetivo é desenvolver soluções digitais que sejam
+                funcionais, bem estruturadas e intuitivas, entrego produtos que
+                facilitem a vida das pessoas e reflitam a qualidade e o cuidado
+                em cada detalhe do código."
               </p>
             </div>
           </div>

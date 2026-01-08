@@ -1,16 +1,76 @@
-# React + Vite
+# Personal Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é meu **portfólio pessoal**, desenvolvido com **React + Vite**, focado em performance, organização de código e uma interface moderna.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Tecnologias utilizadas
 
-## React Compiler
+* **React**
+* **Vite** (com HMR – Hot Module Replacement)
+* **TypeScript**
+* **Tailwind CSS**
+* **ESLint**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚡ Sobre o Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este projeto utiliza o Vite para um ambiente de desenvolvimento rápido e otimizado.
+
+Atualmente, dois plugins oficiais do React estão disponíveis:
+
+* **@vitejs/plugin-react** → Usa **Babel** (ou *oxc* no rolldown-vite) para Fast Refresh.
+* **@vitejs/plugin-react-swc** → Usa **SWC**, oferecendo builds ainda mais rápidos.
+
+---
+
+## 🧠 Compilador React
+
+O **React Compiler** não vem habilitado por padrão neste template, pois pode impactar o desempenho durante o desenvolvimento e o build.
+
+Caso deseje utilizá-lo, consulte a documentação oficial do React.
+
+---
+
+## 🛠️ ESLint e boas práticas
+
+Para aplicações em produção, é altamente recomendado:
+
+* Uso de **TypeScript**
+* Regras de lint que considerem tipos
+* Integração com **typescript-eslint**
+
+Essas práticas ajudam a manter o código mais seguro, legível e escalável.
+
+---
+
+## ▶️ Como executar o projeto
+
+```bash
+# Instalar dependências
+npm install
+
+# Iniciar o servidor de desenvolvimento
+npm run dev
+```
+
+---
+
+## 🌐 Deploy
+
+O projeto pode ser facilmente publicado usando plataformas como:
+
+* **Vercel**
+* **Netlify**
+* **GitHub Pages**
+
+---
+
+## 📌 Objetivo
+
+Este portfólio tem como objetivo apresentar meus projetos, habilidades técnicas e evolução como desenvolvedora.
+
+---
+
+✨ Desenvolvido por **Valessa Lessa**

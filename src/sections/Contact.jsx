@@ -14,19 +14,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "pedro@example.com",
-    href: "mailto:pedro@example.com",
+    value: "valessalopes.silva@gmail.com",
+    href: "mailto:valessalopes.silva@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
+    value: "(31)98613-0545",
     href: "tel:+15551234567",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Belo Horizonte, MG, Brazil",
     href: "#",
   },
 ];
@@ -39,7 +39,7 @@ export const Contact = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({
-    type: null, // 'success' or 'error'
+    type: null,
     message: "",
   });
 
@@ -59,15 +59,25 @@ export const Contact = () => {
         );
       }
 
+      // Initialize EmailJS with the public key (string)
+      emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+      // Send the email and pass public key as 4th arg as a fallback
+      // Include alternative field names that the EmailJS template might expect
       await emailjs.send(
         serviceId,
         templateId,
         {
+          // primary fields
+          from_name: formData.name,
+          reply_to: formData.email,
+          message: formData.message,
+          // aliases for templates using {{name}} / {{email}} or {{title}}
           name: formData.name,
           email: formData.email,
-          message: formData.message,
+          title: `Contact from ${formData.name}`,
         },
-        publicKey
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setSubmitStatus({
@@ -75,12 +85,13 @@ export const Contact = () => {
         message: "Message sent successfully! I'll get back to you soon.",
       });
       setFormData({ name: "", email: "", message: "" });
-    } catch (err) {
+    } catch (error) {
       console.error("EmailJS error:", error);
       setSubmitStatus({
         type: "error",
         message:
-          error.text || "Failed to send message. Please try again later.",
+          (error && (error.text || error.message)) ||
+          "Failed to send message. Please try again later.",
       });
     } finally {
       setIsLoading(false);
@@ -94,7 +105,6 @@ export const Contact = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             Get In Touch
@@ -137,12 +147,13 @@ export const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  type="email"
                   className="block text-sm font-medium mb-2"
                 >
                   Email
                 </label>
                 <input
+                  id="email"
+                  type="email"
                   required
                   placeholder="your@email.com"
                   value={formData.email}
@@ -207,8 +218,6 @@ export const Contact = () => {
               )}
             </form>
           </div>
-
-          {/* Contact Info */}
           <div className="space-y-6 animate-fade-in animation-delay-400">
             <div className="glass rounded-3xl p-8">
               <h3 className="text-xl font-semibold mb-6">
@@ -234,17 +243,15 @@ export const Contact = () => {
                 ))}
               </div>
             </div>
-
-            {/* Availability Card */}
             <div className="glass rounded-3xl p-8 border border-primary/30">
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                 <span className="font-medium">Currently Available</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
+                I’m open to new opportunities and exciting projects. If you’re
+                looking for a full-time developer or a freelance professional,
+                feel free to reach out.
               </p>
             </div>
           </div>

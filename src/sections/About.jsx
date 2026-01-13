@@ -31,7 +31,6 @@ export const About = () => {
     <section id="about" className="py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column */}
           <div className="space-y-8">
             <div className="animate-fade-in">
               <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
@@ -49,45 +48,34 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                Sou <strong>Valessa Lopes</strong>, desenvolvedora Full Stack em
-                formação, apaixonada por tecnologia e pela criação de soluções
-                digitais que geram impacto real. Minha jornada na programação
-                começou com a curiosidade de entender como as coisas funcionam,
-                e hoje evolui constantemente por meio de estudos, projetos
-                práticos e aprendizado contínuo.
+                I’m <strong>Valessa Lopes</strong>, a Full Stack Developer in
+                training, passionate about technology and creating digital
+                solutions that generate real impact. My journey in programming
+                began with curiosity about how things work, and today I continue
+                to grow through continuous learning, hands-on projects, and
+                ongoing study.
               </p>
 
               <p>
-                Tenho foco no desenvolvimento de aplicações modernas utilizando
-                <strong> React, Next.js e TypeScript</strong>, além de atuar na
-                construção de soluções completas que envolvem front-end,
-                back-end com
-                <strong> Node.js</strong>, integração com <strong>APIs</strong>{" "}
-                e gerenciamento de <strong>bancos de dados</strong>. Busco
-                sempre unir boas práticas de código, organização e experiência
-                do usuário.
+                I focus on developing modern applications using
+                <strong> React, Next.js, and TypeScript</strong>, while also
+                building complete solutions that involve front-end development,
+                back-end with
+                <strong> Node.js</strong>, <strong>API</strong> integration, and
+                <strong> database</strong> management. I always strive to
+                combine clean code practices, organization, and a great user
+                experience.
               </p>
 
               <p>
-                Estou em constante evolução, explorando novas tecnologias,
-                aprimorando meus conhecimentos e colocando em prática tudo o que
-                aprendo por meio de projetos pessoais e profissionais, sempre
-                com o objetivo de crescer como desenvolvedora e entregar
-                soluções eficientes e bem estruturadas.
-              </p>
-            </div>
-
-            <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
-              <p className="text-lg font-medium italic text-foreground">
-                "Meu objetivo é desenvolver soluções digitais que sejam
-                funcionais, bem estruturadas e intuitivas, entrego produtos que
-                facilitem a vida das pessoas e reflitam a qualidade e o cuidado
-                em cada detalhe do código."
+                I am constantly evolving, exploring new technologies, improving
+                my skills, and applying everything I learn through personal and
+                professional projects, with the goal of growing as a developer
+                and delivering efficient, well-structured solutions.
               </p>
             </div>
           </div>
 
-          {/* Right Column - Hilights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div

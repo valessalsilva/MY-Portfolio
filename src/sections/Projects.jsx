@@ -1,45 +1,45 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
- {
+  {
+    title: "Full Stack Umbrella Project",
+    description:
+      "A computational solution for calculating and geolocating small rainwater catchment basins on slopes, assisting in flow analysis and environmental risk prevention.",
 
-  title: "Projeto Full Stack Guarda-Chuva",
-
-  description:
-    "Solução computacional para cálculo e geolocalização de microbacias de captação de águas pluviais em áreas de encosta, auxiliando na análise do escoamento e prevenção de riscos ambientais.",
-  image: "/projects/project1.jpeg",
-
-  tags: ["React", "Node.js", "Geolocalização", "Cálculo"],
-  link: "#",
-  github: "#",
-},
-{
+    image: "/projects/project1.jpeg",
+    tags: [ "Android Studio","Java","Kotlin","Geolocation","Firebase","Hydrological Calculation",
+    ],
+    link: "#",
+    github: "#",
+  },
+  {
     title: "Beauty App",
     description:
-    "Aplicativo para localizar salões de beleza, agendar horários e gerenciar favoritos.",
+      "A mobile app built with React Native to locate beauty salons, schedule appointments, manage favorites, and store user data using a cloud database.",
 
     image: "/projects/project2.png",
-    tags: ["React", "UI Design", "Tailwind"],
+
+    tags: ["React Native", "UI Design", "Tailwind CSS", "Firebase", "Database"],
     link: "#",
     github: "#",
   },
- 
+
   {
-    title: "QR Code",
-    description:
-      "Projeto de QR Code para acesso rápido a links e informações digitais."
-,
-    image: "/projects/project4.png",
-    tags: ["React", "Components", "UX/UI"],
+   title: "QR Code Generator",
+  description:
+    "A frontend application built with Python to generate QR codes quickly and efficiently, focusing on usability and simplicity.",
+  image: "/projects/project4.png",
+  tags: ["Python", "Frontend", "QR Code", "VSCode"],
     link: "#",
     github: "#",
   },
   {
-     title: "Portfolio Pessoal",
-    description:
-      "Aplicação em desenvolvimento com integração front-end e back-end, focada em boas práticas, escalabilidade e aprendizado contínuo.",
-    image: "/projects/project5.png",
-    tags: ["React", "Node.js", "Full Stack"],
+   title: "Personal Portfolio",
+description:
+  "A full-stack application in development with integrated front-end and back-end, focused on best practices, scalability, and continuous learning.",
+image: "/projects/project5.png",
+tags: ["React", "Node.js", "Full Stack", "VSCode"],
+
     link: "#",
     github: "#",
   },
@@ -140,11 +140,11 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <a  href="https://github.com/valessalsilva">
-          <AnimatedBorderButton>
-            View All Projects
-            <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
+          <a href="https://github.com/valessalsilva">
+            <AnimatedBorderButton>
+              View All Projects
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
           </a>
         </div>
       </div>

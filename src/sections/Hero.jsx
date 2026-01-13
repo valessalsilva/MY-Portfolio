@@ -25,7 +25,6 @@ const skills = [
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <img
           src="/hero-bg.jpg"
@@ -35,40 +34,37 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
       </div>
 
-      {/* Content */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left */}
           <div className="space-y-8">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              Desenvolvedora Full Stack
+              Full Stack Developer
             </span>
 
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                Criando{" "}
-                <span className="text-primary glow-text">experiências</span>
+                Creating{" "}
+                <span className="text-primary glow-text">experiences</span>
                 <br />
-                digitais com
+                digital with
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  propósito.
+                  purpose.
                 </span>
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-lg">
-                Olá, eu sou <strong>Valessa Lopes</strong>. Desenvolvedora Full
-                Stack em formação, com foco em React, TypeScript, Node.js,
-                integração com APIs e bancos de dados. Atuo no desenvolvimento
-                de interfaces modernas e funcionais, além da construção de
-                soluções completas no front-end e back-end. Sou apaixonada por
-                tecnologia, aprendizado contínuo e pela criação de soluções
-                digitais que geram impacto real.
+                Hello, I’m <strong>Valessa Lopes</strong>. A Full Stack
+                Developer in training, focused on React, TypeScript, Node.js,
+                API integration, and databases. I work on building modern,
+                functional user interfaces as well as developing complete
+                front-end and back-end solutions. I’m passionate about
+                technology, continuous learning, and creating digital solutions
+                that deliver real impact.
               </p>
             </div>
 
-            {/* Buttons */}
             <div className="flex flex-wrap gap-4">
               <Button
                 size="lg"
@@ -79,14 +75,10 @@ export const Hero = () => {
                   )
                 }
               >
-                Entrar em contato <Mail className="w-5 h-5" />
+                Contact me <Mail className="w-5 h-5" />
               </Button>
 
-              <a
-                href="/profile.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/profile.pdf" target="_blank" rel="noopener noreferrer">
                 <AnimatedBorderButton>
                   <Download className="w-5 h-5" />
                   Download CV
@@ -94,11 +86,8 @@ export const Hero = () => {
               </a>
             </div>
 
-            {/* Social */}
             <div className="flex items-center gap-4">
-              <span className="text-sm text-muted-foreground">
-                Me encontre em:
-              </span>
+              <span className="text-sm text-muted-foreground">Find me on:</span>
 
               <a
                 href="https://github.com/valessalsilva"
@@ -120,7 +109,6 @@ export const Hero = () => {
             </div>
           </div>
 
-           
           <div>
             <div className="relative max-w-md mx-auto">
               <div className="relative glass rounded-3xl p-2 glow-border">
@@ -132,7 +120,7 @@ export const Hero = () => {
 
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3">
                   <span className="text-sm font-medium">
-                    Aberta a oportunidades 🚀
+                    Open to opportunities🚀
                   </span>
                 </div>
               </div>
@@ -140,10 +128,9 @@ export const Hero = () => {
           </div>
         </div>
 
-        
         <div className="mt-20">
           <p className="text-sm text-muted-foreground mb-6 text-center">
-            Tecnologias que utilizo
+            Technologies I use
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             {skills.map((skill) => (
@@ -158,7 +145,6 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <a
           href="#about"

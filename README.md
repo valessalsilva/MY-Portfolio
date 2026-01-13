@@ -67,6 +67,32 @@ O projeto pode ser facilmente publicado usando plataformas como:
 
 ---
 
+## ✉️ Configurar EmailJS (Envio de mensagens pelo formulário)
+
+Siga estes passos para permitir o envio de mensagens pelo formulário do portfólio:
+
+1. Crie uma conta em https://www.emailjs.com/ e faça login.
+2. Adicione um **Service** (por exemplo, Gmail, Outlook ou outro provedor). Anote o **Service ID** (ex.: `service_xxxxx`).
+3. Crie um **Template** com os campos que você usará (ex.: `from_name`, `reply_to`, `message`). Anote o **Template ID** (ex.: `template_xxxxx`).
+4. Obtenha sua **Public Key** (às vezes chamada de User ID/Public Key) no painel do EmailJS.
+5. No seu projeto, defina as variáveis de ambiente no arquivo `.env` ou via painel do provedor (Vercel/Netlify):
+
+```dotenv
+VITE_EMAILJS_PUBLIC_KEY=seu_public_key_aqui
+VITE_EMAILJS_SERVICE_ID=service_XXXXXXX
+VITE_EMAILJS_TEMPLATE_ID=template_XXXXXXX
+```
+
+6. Confirme que os nomes dos campos do template (`{{from_name}}`, `{{reply_to}}`, `{{message}}`) batem com os `templateParams` enviados no `Contact.jsx`.
+
+Nota: Alguns templates usam outras variáveis como `{{name}}`, `{{email}}` ou `{{title}}`. O formulário foi atualizado para enviar esses aliases também (`name`, `email`, `title`), então o template funcionará mesmo que use essas variações.
+
+7. Teste localmente (`npm run dev`) e veja o console / aba Network para diagnosticar erros. No painel do EmailJS você também pode ver logs de envio.
+
+> Dica: No código, o `publicKey` precisa ser um string (ex.: `emailjs.init(YOUR_PUBLIC_KEY)`), e também pode ser passado como 4º argumento para `emailjs.send`.
+
+---
+
 ## 📌 Objetivo
 
 Este portfólio tem como objetivo apresentar meus projetos, habilidades técnicas e evolução como desenvolvedora.
